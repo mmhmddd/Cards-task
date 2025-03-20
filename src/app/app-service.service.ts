@@ -13,8 +13,10 @@ export class AppServiceService {
   constructor(private http: HttpClient) {}
 
   getRecipes(): Observable<any> {
-    console.log('Fetching data from API...');
+    console.log('Fetching data from API');
     return this.http.get(this.url); 
 
 }
+
+
 }
